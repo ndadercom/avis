@@ -33,3 +33,12 @@ Pourquoi cette page plutôt qu'un lien Google direct (05/11/2026) : le long lien
 1. GitHub Desktop : « Commit to main », puis « Push origin ».
 2. La première fois : sur github.com, dépôt `avis` › Settings › Pages › Build and deployment › Source « Deploy from a branch », Branch `main`, dossier `/ (root)`, Save.
 3. Attendre 1 à 2 minutes, puis vérifier avec un vrai envoi WhatsApp (bouton « M'envoyer un essai » de l'application) et une capture **du côté qui reçoit**. WhatsApp peut garder une ancienne carte en mémoire quelque temps.
+
+## Si la page ne se met pas à jour
+
+GitHub Pages met normalement 1 à 2 minutes. Il arrive que la mise en ligne échoue (étape « Deploy to GitHub Pages ») ou reste bloquée « Queued » (05/11/2026 : bloquée deux jours). Dans ce cas :
+
+1. onglet **Actions** du dépôt, ouvrir le run bloqué, **Cancel workflow** ;
+2. faire un nouvel envoi (n'importe quel petit changement, par exemple dans ce fichier) : un nouveau run démarre.
+
+Vérifier ensuite que la page en ligne a la bonne `og:image`.
